@@ -6,7 +6,7 @@
 #include "representant.h"
 
 using namespace std;
-
+//main du programme :
 int main() {
     // Create an instance of the entreprise class
     entreprise myEnterprise("MyCompany");
@@ -15,19 +15,19 @@ int main() {
     int choice;
     do {
         cout << "\nMenu:" << endl;
-        cout << "1. Set Company Name" << endl;
-        cout << "2. Add Employee" << endl;
-        cout << "3. Display Salaries" << endl;
-        cout << "4. Reset Representant Trips" << endl;
-        cout << "5. Exit" << endl;
+        cout << "1. saisir nom entreprise" << endl;
+        cout << "2. ajouter employes" << endl;
+        cout << "3. afficher employes et salaires" << endl;
+        cout << "4. reset trajets representants" << endl;
+        cout << "5. quitter" << endl;
 
-        cout << "Enter your choice: ";
+        cout << "entrer choix : ";
         cin >> choice;
 
         switch (choice) {
         case 1: {
             string newName;
-            cout << "Enter the new company name: ";
+            cout << "Entrer nom entreprise: ";
             cin >> newName;
             myEnterprise.setRaisonSociale(newName);
             break;
@@ -48,12 +48,15 @@ int main() {
             system("CLS");
             if (type == 1) {
                 technicien* technicien1 = new technicien(name, prenom, age);
+                myEnterprise.addTechnicien(technicien1);
             }
             else if(type == 2) {
                 vendeur* vendeur1 = new vendeur(name, prenom, age);
+                myEnterprise.addCommercial(vendeur1);
             }
             else if (type == 3) {
                 representant* representant1 = new representant(name, prenom, age);
+                myEnterprise.addCommercial(representant1);
             }
             else {
                 cout << "valeur saisie pas comprise entre 1 et 3";
@@ -61,19 +64,19 @@ int main() {
             break;
         }
         case 3: {
-            //myEnterprise.displaySalaries();
+            myEnterprise.displayEmployees();
             break;
         }
         case 4: {
-            //representant1.resetDeplacement();
+            //myEnterprise.resetDeplacement();
             break;
         }
         case 5: {
-            cout << "Exiting program." << endl;
+            cout << "Quitter programme." << endl;
             break;
         }
         default:
-            cout << "Invalid choice. Please enter a number between 1 and 6." << endl;
+            cout << "choisir valeur entre 1 et 5" << endl;
         }
 
     } while (choice != 5);
