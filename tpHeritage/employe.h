@@ -2,11 +2,9 @@
 
 #include <string>
 #include <iostream>
-#include "entreprise.h"
 using namespace std;
 
-class employe :
-	public  entreprise
+class employe
 {
 protected :
 	string nom;
@@ -14,7 +12,7 @@ protected :
 	int age;
 	int salaire;
 public :
-	employe(string raisonSociale, string nom, string prenom, int age);
+	employe(string nom, string prenom, int age);
 	~employe();
 	string getNom();
 	string getPrenom();

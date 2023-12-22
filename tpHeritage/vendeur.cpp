@@ -1,7 +1,7 @@
 #include "vendeur.h"
 
-vendeur::vendeur(string raisonSociale, string nom, string prenom, int age) :
-commercial(raisonSociale, nom, prenom, age)
+vendeur::vendeur(string nom, string prenom, int age) :
+commercial(nom, prenom, age)
 {
 	this->prime = 2;
 	this->salaire = salaire + prime;

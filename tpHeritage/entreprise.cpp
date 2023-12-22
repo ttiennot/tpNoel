@@ -9,3 +9,8 @@ entreprise::~entreprise()
 {
 
 }
+
+void entreprise::setRaisonSociale(string nom)
+{
+	RaisonSociale = nom;
+}

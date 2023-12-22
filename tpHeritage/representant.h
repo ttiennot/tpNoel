@@ -5,7 +5,7 @@ class representant :
 	public commercial
 {
 public :
-	representant(string raisonSociale, string nom, string prenom, int age);
+	representant(string nom, string prenom, int age);
 	~representant();
 	void setNbDeplacement(int val);
 	int getNbDeplacement();

@@ -6,7 +6,7 @@ class technicien :
 	public employe
 {
 public :
-	technicien(string raisonSociale, string nom, string prenom, int age);
+	technicien(string nom, string prenom, int age);
 	~technicien();
 };
 

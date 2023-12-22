@@ -1,8 +1,7 @@
 #include "employe.h"
 #include "entreprise.h"
 using namespace std;
-employe::employe(string raisonSociale, string nom, string prenom, int age)
-	: entreprise(raisonSociale)
+employe::employe(string nom, string prenom, int age)
 {
 	this->nom = nom;
 	this->prenom = prenom;

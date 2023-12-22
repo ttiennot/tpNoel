@@ -1,7 +1,7 @@
 #include "representant.h"
 
-representant::representant(string raisonSociale, string nom, string prenom, int age) :
-	commercial(raisonSociale, nom, prenom, age)
+representant::representant(string nom, string prenom, int age) :
+	commercial(nom, prenom, age)
 {
 	this->prime = 5;
 	this->nbrDeplacements = 0;

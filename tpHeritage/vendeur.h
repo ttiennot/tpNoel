@@ -5,7 +5,7 @@ class vendeur :
 	public commercial
 {
 public :
-	vendeur(string raisonSociale, string nom, string prenom, int age);
+	vendeur(string nom, string prenom, int age);
 	~vendeur();
 };
 

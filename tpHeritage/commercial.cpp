@@ -2,8 +2,8 @@
 
 using namespace std;
 
-commercial::commercial(string raisonSociale, string nom, string prenom, int age) :
-	employe(raisonSociale, nom, prenom, age) {
+commercial::commercial(string nom, string prenom, int age) :
+	employe(nom, prenom, age) {
 	this->salaire = 50;
 	this->prime = 0;
 }

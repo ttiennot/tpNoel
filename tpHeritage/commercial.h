@@ -7,7 +7,7 @@ class commercial :
 protected :
 	int prime;
 public:
-	commercial(string raisonSociale, string nom, string prenom, int age);
+	commercial(string nom, string prenom, int age);
 	~commercial();
 };
 
